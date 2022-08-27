@@ -1,7 +1,8 @@
 import { diffDates, diffToHtml } from "./datecalc.js";
 import { formatError, formatSuccess } from "./utils.js"; 
 import { tabSwitcher } from "./switch_tabs.js";
-
+import {Howl} from 'howler';
+import "../css/main.sass";
 
 /** about calculator */
 const dateCalcForm = document.getElementById("datecalc");
@@ -28,10 +29,10 @@ function handleCalcDates(event) {
 
 
 let sound = new Howl({
-    src: './ding-sound-effect_2.mp3'
+    src: '../ding-sound-effect_2.mp3'
 });
 let tick = new Howl({
-    src: './tick.mp3'
+    src: '../tick.mp3'
 });
 
 
