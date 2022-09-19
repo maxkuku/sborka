@@ -1,0 +1,31 @@
+* {
+    font-family: sans-serif;
+}
+.tab {
+    display: none;
+}
+.tab.active {
+    display: block;
+}
+.tabs {
+    padding: 20px 0 0 20px;
+    margin-bottom: 40px;
+}
+.tabs {
+    & > div {
+        display: inline-block;
+        border-right: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        span {
+            cursor: pointer;
+            padding: 10px 20px;
+            display: block;
+        }
+        span:hover,
+        span.active {
+            background-color: #ffd;
+        }
+    }
+}
+
+/*# sourceMappingURL=/main.c52e0fe2.css.map */
